@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="software developer, programmer, lagos, nigeria">
+    <meta name="description" content="software developer in nigeria,programmer in lagos, developer in nigeria, software engineer in lagos">
+    <meta name="author" content="shopeyin oladimeji">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/css/bootstrap.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/lora/lora-bold.ttf' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'javascript/script.js' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<style>
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+ html,
+body {
+  height: 100%;
+  background-color: #1b1e23;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+
+
+</style>
+<body >
+        <div class="cover-container  w-100 h-100 p-3 mx-auto flex-column">
+               
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <h3 class="masthead-brand" style="font-family: 'Roboto Slab', serif;">Shopeyin</h3>
+                    <nav class="nav nav-masthead justify-content-center">
+                      <a class="nav-link " href="{% url 'home' %}">Home</a>
+                      <a class="nav-link active" href="{%  url 'about' %}">About</a>
+                        
+                        
+                    </nav>
+                  </div>
+              </header>
+              <div class="container banner1" >
+                  <div class="container-fluid" >
+                      <div class="row" >
+                          <div class="col-md-3" >
+                              <img src="{% static 'images/ola1.jpg' %}" width="250" alt="oladimeji logo"  class="img-fluid" >	
+                          </div>
+                          <div class="col-md-8" >
+                              <h3>Hello   <img src="{% static 'images/waving.png' %}" width="50" alt="waving logo"  class="img-fluid" >	</h3>
+                              <p  style="font-size: 20px;min-height: 290px;">I'm a Full Stack Web Developer , I am passionate about making the web accessible to everyone and I enjoy solving complex problems using web technologies.<br>
+                                I spend most of my time working with Django, CSS3, HTML5.  New and open source web technologies make me super excited and I can’t wait to see what is to come of the web in the next few years.<br><br>When I am not coding, I am either watching football or playing video games. </p>
+                              
+                                <div >
+                                  <a href="https://web.facebook.com/shopeyin.tommy" target="_blank"> <i class="fab fa-facebook"></i></a>
+                                  <a href="https://twitter.com/shopeyin69" target="_blank"><i class="fab fa-twitter"></i></a>	
+                                  <a href="https://www.linkedin.com/in/oladimejishopeyin/" target="_blank"> <i class="fab fa-linkedin"></i></a>	
+                                  <a href="https://www.instagram.com/tommy_slipz/"  target="_blank"> <i class="fab fa-instagram"></i></a> 
+                                </div>
+                              
+                          </div>
+                        
+                      </div>
+                  </div>
+                  
+              </div>
+
+               
+              <footer>
+
+                          <p style="text-align: center;border:1px solid green; margin-top: 10px; "  >Copyright &copy; 2019 SHOPEYIN. All rights Reserved</p>
+    
+            </footer>
+         </div>
+
+
+     <!--jQuery-->
+     <script type="text/javascript" src="{% static  'css/bootstrap/js/jquery-3.3.1.js' %}"></script>
+     <!--Popper-->
+     <script type="text/javascript" src="{% static  'css/bootstrap/js/popper.min.js' %}"></script>
+     <!--Bootstrap-->
+     <script type="text/javascript" src="{% static 'css/bootstrap/js/bootstrap.min.js' %}"></script>
+    
+</body>
+</html>

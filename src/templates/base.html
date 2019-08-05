@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shopeyin</title>
+		<meta cha rset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/lora/lora-bold.ttf' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome/css/all.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'javascript/script.js' %}">
+</head>
+<body>
+	
+<div class="container w-100 h-500 p-3 mx-auto flex-column ">
+   
+		<header class="masthead mb-auto">
+		  <div class="inner">
+					<h3 class="masthead-brand">Shopeyin</h3>
+					<nav class="nav nav-masthead justify-content-center">
+						<a class="nav-link active" href="{% url 'hom' %}">Home</a>
+						<a class="nav-link" href="{%  url 'about' %}">About</a>
+			  			<a class="nav-link" href="#">Blog</a> 
+			  			<a class="nav-link" href="#">Say,Hi!</a>
+					</nav>
+				</div>
+		</header>
+        {% block content %}
+
+
+        {% endblock %}
+	  
+		<footer class="container">
+				<div class="col-md-12" >
+						<p id="foot"  style="text-align: center">Copyright &copy; 2019 SHOPEYIN. All rights Reserved</p>
+				</div>
+		</footer>
+</div>
+
+
+	  <!--jQuery-->
+      <script type="text/javascript" src="{% static  'css/bootstrap/js/jquery-3.3.1.js' %}"></script>
+      <!--Popper-->
+      <script type="text/javascript" src="{% static  'css/bootstrap/js/popper.min.js' %}"></script>
+      <!--Bootstrap-->
+      <script type="text/javascript" src="{% static 'css/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

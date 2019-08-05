@@ -1,0 +1,251 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/css/bootstrap.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/lora/lora-bold.ttf' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'javascript/script.js' %}">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+<style>
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #1b1e23;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+
+</style>
+<body>
+        <div class="cover-container   w-100 h-100 p-3 mx-auto flex-column">
+                
+                    <header class="masthead mb-auto">
+                         <div class="inner">
+                                <h3 class="masthead-brand" style="font-family: 'Roboto Slab', serif;">Shopeyin</h3>
+                                <nav class="nav nav-masthead justify-content-center"  >
+                                    <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                                    <a class="nav-link" href="{%  url 'about' %}">About</a>
+                                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Say Hi</a>
+                                    
+                                </nav>
+                            </div>
+                    </header>
+
+                    <div class="container banner1" >
+                        <div class="row" >
+                            <div class="col-md-12" id="inner-banner1" >
+                                    <p id="paragraph1" >I think, therefore  I</p>	
+                                    <p id="paragraph2" >CODE</p>
+                                    <p id="paragraph3" >turning ideas into reality...</p>
+                                    <img src="{% static 'images/tomm.jpg' %}" width="150" height="150" alt="oladimeji logo" style="border: 1px solid black; border-radius: 50%;" >	
+                            </div>
+                            <div class="row" id="image" style="margin: auto" >
+                                    <a href="https://web.facebook.com/shopeyin.tommy" target="_blank"> <i class="fab fa-facebook"></i></a>
+                                    <a href="https://twitter.com/shopeyin69" target="_blank"><i class="fab fa-twitter"></i></a>	
+                                    <a href="https://www.linkedin.com/in/oladimejishopeyin/" target="_blank"> <i class="fab fa-linkedin"></i></a>	
+                                    <a href="https://www.instagram.com/tommy_slipz/"  target="_blank"> <i class="fab fa-instagram"></i></a> 
+                             </div>	
+                        </div>
+                    </div>
+
+                    <div class="container banner2">
+                        <div class="row" >
+                            <div class="col-md-12">
+                               <h5 style="text-align: center">Hi I'am Oladimeji, Nice to meet you!!</h5>
+                               <p style="text-align: center;font-size: 20px;" >I am passionate about building excellent software <br>that improves the lives of those around me. I specialize in creating software for clients<br> ranging from individuals and small-businesses all the way to large enterprise corporations.</p>	
+                               <h3  style="text-align: center" >Full stack web developer</h3>
+                               <p  style="text-align: center;font-size: 20px;"> Bringing ideas to life in the browser.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="container banner3">
+                            <div class="row">
+                                    <div class="col-md-12" >
+                                            <table class="table table-hover" style="width: 80%;margin:auto;color:white;text-align: center">
+                                                    <tr>
+                                                        <th>Languages I speak:</th>
+                                                        <th>Dev Tools</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>HTML</td>
+                                                        <td>Bootstrap</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CSS</td>
+                                                        <td>Gitbash</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Javascript/Jquery</td>
+                                                        <td>Terminal</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Python/Flask/Django</td>
+                                                        <td>Github</td>
+                                                    </tr>
+                                                </table>
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 style="text-align: center">Portfolio</h3>
+                                </div>
+                            </div>
+                    </div>
+
+                    
+                    
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: red;">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: red;">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                                <form  class="my-ajax-form1" data-url="/contactus/" method="POST" >
+                                     {% csrf_token %}
+                                     <h3 style="text-align: center">Contact me</h3>
+                                    
+                                    <div class="row">                        
+                                        <div  id="response" class="col-md-12   form-label-group">
+                                            
+                                        </div>
+                                    </div>                                
+                                    <div class="row">
+                                            <div class="col-md-12 form-group">                                                   
+                                                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>                                                   
+                                            </div>
+                                    </div>  
+                                    <div class="row">
+                                        <div class="col-md-12  form-group">
+                                                
+                                                <input type="tel" id="inputPhone" name="phonenumber" class="form-control" placeholder="Phonenumber"  required autofocus>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-12  form-group">
+                                                   <textarea name='message' cols="20" rows="6" placeholder="Type your message" class="form-control"></textarea>
+                                            </div>
+                                    </div>
+                                    
+                                        {% for field in contactus_form %}
+                                            {% for error in field.errors %}
+                                        <p style="color:red">{{ error }}</p>
+                                            {% endfor %}
+                                        {% endfor %}
+                                
+                                        {% if contactus_form.non_field_errors %}
+                                        <div style="color:red">
+                                            <p> {{  contactus_form.non_field_errors }}</p>
+                                        </div>
+                                        {% endif %}
+                                        <div class="modal-footer">
+                                                <button class="btn btn-lg btn-primary " type="submit">Send message</button>
+                                        </div>
+                                </form>
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div> 
+                    
+                    <footer class="container">
+                            <div class="col-md-12" >
+                                    <p id="foot"  style="text-align: center">Copyright &copy; 2019 SHOPEYIN. All rights Reserved</p>
+                            </div>
+                    </footer>
+        </div>
+
+
+     <!--jQuery-->
+     <script type="text/javascript" src="{% static  'css/bootstrap/js/jquery-3.3.1.js' %}"></script>
+     <!--Popper-->
+     <script type="text/javascript" src="{% static  'css/bootstrap/js/popper.min.js' %}"></script>
+     <!--Bootstrap-->
+     <script type="text/javascript" src="{% static 'css/bootstrap/js/bootstrap.min.js' %}"></script>
+
+     <script type="text/javascript">
+       $(document).ready(function(){
+		  var $myForm = $('.my-ajax-form1');
+		  $myForm.submit(function(event){
+			  event.preventDefault()
+			  var $formData = $myForm.serialize();
+			  var $thisURL = $myForm.attr('data-url')
+			  $.ajax({
+					  method:'POST',
+					  url: $thisURL,
+					  data: $formData,
+					  success : handleSuccess,
+					  error: handleError,
+			  });
+			  function handleSuccess(data){
+				  console.log(data.message)
+				  t= data.message
+				  $('#response').html(t)
+                  $('#response').addClass('alert alert-danger')
+                  $('#response').fadeOut(8000)
+                  $myForm[0].reset()
+                  setTimeout(location.reload.bind(location),5000)
+              }
+            
+			  function handleError(ThrowError){
+				  console.log(ThrowError)
+			  }
+		  });
+	  });
+     </script>
+    
+</body>
+</html>
